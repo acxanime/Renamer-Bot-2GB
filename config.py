@@ -15,7 +15,7 @@ class Config(object):
     # other configs
     BOT_UPTIME = time.time()
     START_PIC = (os.environ.get("START_PIC", "https://envs.sh/N2f.jpg https://envs.sh/N2a.jpg https://envs.sh/N2O.jpg")).split()
-    ADMIN = int(os.environ.get("ADMIN", ""))
+    ADMIN = int(os.environ.get("ADMIN", "6692613520 7475464684"))
 
     # channels
     IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
