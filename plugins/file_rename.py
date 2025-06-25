@@ -91,8 +91,8 @@ async def doc(bot, update):
     file = update.message.reply_to_message
 
     try:
-        if update.message.text != "🚀 Try To Download...  ⚡":
-            ms = await update.message.edit("🚀 Try To Download...  ⚡")
+        if update.message.text != "🚀 Tʀʏ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...  ⚡":
+            ms = await update.message.edit("🚀 Tʀʏ Tᴏ Dᴏᴡɴʟᴏᴀᴅ...  ⚡")
     except Exception as e:
         print(f"Error editing message: {e}")
     
@@ -101,7 +101,7 @@ async def doc(bot, update):
             message=file, 
             file_name=file_path, 
             progress=progress_for_pyrogram, 
-            progress_args=("🚀 Downloading...  ⚡", ms, time.time())
+            progress_args=("🚀 Dᴏᴡɴʟᴏᴀᴅɪɴɢ... ⚡", ms, time.time())
         )                    
     except Exception as e:
         return await ms.edit(e)
@@ -113,7 +113,7 @@ async def doc(bot, update):
         metadata_path = f"Metadata/{new_filename}"
         await add_metadata(path, metadata_path, metadata, ms)
     else:
-        await ms.edit("⏳ Mode Changing...  ⚡")
+        await ms.edit("⏳ Mᴏᴅᴇ Cʜᴀɴɢɪɴɢ... ⚡")
 
     duration = 0
     try:
@@ -153,8 +153,8 @@ async def doc(bot, update):
                 print(e)  
 
     try:
-        if update.message.text != "💠 Try To Upload...  ⚡":
-            await ms.edit("💠 Try To Upload...  ⚡")
+        if update.message.text != "💠 Tʀʏ Tᴏ Uᴘʟᴏᴀᴅ... ⚡":
+            await ms.edit("💠 Tʀʏ Tᴏ Uᴘʟᴏᴀᴅ...  ⚡")
     except Exception as e:
         print(f"Error editing message: {e}")
     
@@ -179,7 +179,7 @@ async def doc(bot, update):
                 thumb=ph_path,
                 duration=duration,
                 progress=progress_for_pyrogram,
-                progress_args=("💠 Uploading...  ⚡", ms, time.time()),
+                progress_args=("💠 Uᴘʟᴏᴀᴅɪɴɢ...  ⚡", ms, time.time()),
                 reply_markup=close_button
             )
 
