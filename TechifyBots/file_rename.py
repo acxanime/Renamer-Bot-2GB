@@ -211,7 +211,7 @@ async def doc(bot, update):
     if file_path:
         os.remove(file_path)
 
-    await asyncio.sleep(1800)
+    await asyncio.sleep(10800)
     try:
         await sent_message.delete()
         await bin.delete()
