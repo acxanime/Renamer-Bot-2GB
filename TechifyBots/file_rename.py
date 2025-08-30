@@ -190,7 +190,7 @@ async def doc(bot, update):
             )
 
         deletion_msg = await sent_message.reply(
-            text="**🗑 This file will auto-delete in 30 minutes. Save it now!**",
+            text="**🗑 This file will auto-delete in 03 Hours. Save it now!**",
         )
         
         bin = await bot.copy_message(
